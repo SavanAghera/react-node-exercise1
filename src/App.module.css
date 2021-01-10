@@ -10,12 +10,12 @@
   transform: translate(-50%, -50%);
   background-color: rgb(193, 213, 219);
   border-radius: 15px;
-  padding: 2%;
+  padding: 6%;
   box-shadow: 0px 1px 4px black;
   transition: none;
 }
 .formdiv:hover {
-  padding: 2.1%;
+  padding: 6.1%;
   transition: all 0.2s ease-out;
   box-shadow: 0px 2px 8px black;
 }
@@ -41,4 +41,13 @@
 
 .button:hover {
   background-color: rgb(193, 213, 219);
+}
+
+nav {
+  background-color: rgb(188, 233, 231);
+  justify-content: space-around;
+}
+.navlinks {
+  list-style: none;
+  justify-content: space-around;
 }
