@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/react-node-exercise1/static/css/main.608bcfc0.chunk.css",
-    "main.js": "/react-node-exercise1/static/js/main.d3d246a4.chunk.js",
-    "main.js.map": "/react-node-exercise1/static/js/main.d3d246a4.chunk.js.map",
-    "runtime-main.js": "/react-node-exercise1/static/js/runtime-main.0256078e.js",
-    "runtime-main.js.map": "/react-node-exercise1/static/js/runtime-main.0256078e.js.map",
-    "static/js/2.4d6c80c9.chunk.js": "/react-node-exercise1/static/js/2.4d6c80c9.chunk.js",
-    "static/js/2.4d6c80c9.chunk.js.map": "/react-node-exercise1/static/js/2.4d6c80c9.chunk.js.map",
-    "static/js/3.ab6da090.chunk.js": "/react-node-exercise1/static/js/3.ab6da090.chunk.js",
-    "static/js/3.ab6da090.chunk.js.map": "/react-node-exercise1/static/js/3.ab6da090.chunk.js.map",
+    "main.css": "/react-node-exercise1/static/css/main.d4abe65d.chunk.css",
+    "main.js": "/react-node-exercise1/static/js/main.40ed2bc7.chunk.js",
+    "main.js.map": "/react-node-exercise1/static/js/main.40ed2bc7.chunk.js.map",
+    "runtime-main.js": "/react-node-exercise1/static/js/runtime-main.328fa503.js",
+    "runtime-main.js.map": "/react-node-exercise1/static/js/runtime-main.328fa503.js.map",
+    "static/js/2.632cdeef.chunk.js": "/react-node-exercise1/static/js/2.632cdeef.chunk.js",
+    "static/js/2.632cdeef.chunk.js.map": "/react-node-exercise1/static/js/2.632cdeef.chunk.js.map",
+    "static/js/3.c66f4109.chunk.js": "/react-node-exercise1/static/js/3.c66f4109.chunk.js",
+    "static/js/3.c66f4109.chunk.js.map": "/react-node-exercise1/static/js/3.c66f4109.chunk.js.map",
     "index.html": "/react-node-exercise1/index.html",
-    "static/css/main.608bcfc0.chunk.css.map": "/react-node-exercise1/static/css/main.608bcfc0.chunk.css.map",
-    "static/js/2.4d6c80c9.chunk.js.LICENSE.txt": "/react-node-exercise1/static/js/2.4d6c80c9.chunk.js.LICENSE.txt"
+    "static/css/main.d4abe65d.chunk.css.map": "/react-node-exercise1/static/css/main.d4abe65d.chunk.css.map",
+    "static/js/2.632cdeef.chunk.js.LICENSE.txt": "/react-node-exercise1/static/js/2.632cdeef.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0256078e.js",
-    "static/js/2.4d6c80c9.chunk.js",
-    "static/css/main.608bcfc0.chunk.css",
-    "static/js/main.d3d246a4.chunk.js"
+    "static/js/runtime-main.328fa503.js",
+    "static/js/2.632cdeef.chunk.js",
+    "static/css/main.d4abe65d.chunk.css",
+    "static/js/main.40ed2bc7.chunk.js"
   ]
 }
