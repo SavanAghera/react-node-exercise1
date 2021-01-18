@@ -4,6 +4,7 @@ import bootstrap from "./bootstrap.module.css";
 import SignUp from './components/SignUp';
 import Login from './components/Login';
 import Nav from './components/Navbar';
+import Time from './components/Time';
 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
@@ -17,6 +18,7 @@ function useMergeState(initialState) {
 function App() {
   return (
     <Router className={[styles.app, bootstrap.container]}>
+      <Time/>
       <Nav></Nav>
       <Switch>
         <Route path="/" exact component={Home} />

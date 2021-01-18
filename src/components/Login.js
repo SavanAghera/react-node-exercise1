@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from "react";
 import styles from "../App.module.css";
+import axios from 'axios';
+
 function useMergeState(initialState) {
     const [state, setState] = useState(initialState);
     const setMergedState = (newState) =>
@@ -11,11 +13,22 @@ const Login = () => {
 
     const [formstate, formsetstate] = useMergeState({
         email: "",
-        password: "",
+        password: ""
     });
 
     const callapi = (event) => {
-        //console.log(event.target[0].value)
+        const data ={
+            email:formstate.email,
+            password:formstate.password
+        };
+        console.log(data);
+        axios.post("http://localhost:5000/api/auth/",data)
+        .then(response => {
+            console.log(response.headers["x-auth"]);
+            alert("user login successful");
+        })
+        .catch(error =>  alert(error.response.data));
+
     };
 
     const emailchange = (event) => {
@@ -56,15 +69,9 @@ const Login = () => {
                                 />
                             </td>
                         </tr>
-                        <tr>
-                            <td colSpan="2">
-                                <button className={styles.button} value="Sign in" onClick={callapi}>
-                                    Login
-                                </button>
-                            </td>
-                        </tr>
                     </table>
                 </form>
+                <button className={styles.button} value="Sign in" onClick={callapi}>Login</button>
             </div>
             <h1>{formstate.email}</h1>
             <h1>{formstate.password}</h1>

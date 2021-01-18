@@ -1,6 +1,8 @@
 import React from 'react';
 import { useState } from "react";
 import styles from "../App.module.css";
+import axios from 'axios';
+
 function useMergeState(initialState) {
     const [state, setState] = useState(initialState);
     const setMergedState = (newState) =>
@@ -15,9 +17,24 @@ const SignUp = () => {
         password: "",
     });
 
-    const callapi = (event) => {
-        //console.log(event.target[0].value)
+    const callapi = () => {
+        const data = {
+            name:formstate.name,
+            email: formstate.email,
+            password: formstate.password
+        }
+        console.log(data);  
+        
+        axios.get("http://localhost:5000/").then((response) =>console.log(response.data))
+        .catch(error => console.log(error));
+
+        axios.post("http://localhost:5000/api/users",data).then((response) => {
+            console.log(response.data);
+            alert("user successfully created");
+        })
+        .catch(error => alert(error.response.data));
     };
+    
     const namechange = (event) => {
         formsetstate({ name: event.target.value });
     };
@@ -72,15 +89,9 @@ const SignUp = () => {
                                 />
                             </td>
                         </tr>
-                        <tr>
-                            <td colSpan="2">
-                                <button className={styles.button} value="Sign in" onClick={callapi}>
-                                    Sign in
-                                </button>
-                            </td>
-                        </tr>
                     </table>
                 </form>
+                <button className={styles.button} value="Sign in" onClick={callapi} > Sign in </button>
             </div>
             <h1>{formstate.name}</h1>
             <h1>{formstate.email}</h1>
