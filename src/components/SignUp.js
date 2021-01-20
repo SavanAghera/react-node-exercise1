@@ -3,6 +3,7 @@ import { useState } from "react";
 import styles from "../App.module.css";
 import axios from 'axios';
 
+
 function useMergeState(initialState) {
     const [state, setState] = useState(initialState);
     const setMergedState = (newState) =>
@@ -25,10 +26,10 @@ const SignUp = () => {
         }
         console.log(data);  
         
-        axios.get("http://localhost:5000/").then((response) =>console.log(response.data))
+        axios.get("https://stormy-dusk-21181.herokuapp.com/").then((response) =>console.log(response.data))
         .catch(error => console.log(error));
 
-        axios.post("http://localhost:5000/api/users",data).then((response) => {
+        axios.post("https://stormy-dusk-21181.herokuapp.com/api/users",data).then((response) => {
             console.log(response.data);
             alert("user successfully created");
         })
